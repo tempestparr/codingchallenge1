@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>MicroSense</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>MicroSense</h1>
+      <div id="readers"></div>
+      <div class="row">
+        <div class="dropdown col">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Operations
+          </button>
+          <div id="operations" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- options here -->
+          </div>
+        </div>
+        <div class="col-sm">
+          <button id="start" type="button" class="btn btn-primary float-right">Start Job</button>
+        </div>
+      </div>
+      <div class="float-right">
+        <div id="warningMsg" class="p-2 mt-1 alert-warning" role="alert" hidden>WARNING! One or more readers may cause issues. </div>
+      </div>
+      <div>
+        <div id="successMsg" class="p-2 mt-5 alert alert-success" role="alert" style="display: none">
+            Job ran successfully.
+        </div>
+        <div id="errorMsg" class="p-2 mt-5 alert alert-danger" role="alert" style="display: none"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>
